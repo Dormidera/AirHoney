@@ -19,7 +19,8 @@ print("1: Añadir repositorios de Kali Linux")
 print("2: Instalar MacChanger")
 print("3: Instalar herramientas auditorias Wi-Fi")
 print("4: Descargar diccionarios")
-print("5: Salir")
+print("5: Instalar todo")
+print("6: Salir")
 print("	                                    	   ")
 opcion = int(input("Opción seleccionada: "))
 
@@ -47,5 +48,16 @@ elif opcion == 4:
 	os.system("python airhoney.py")
 	
 elif opcion == 5:
+	print("Instalar todo")
+	os.system("echo '# Kali linux repositorios \ndeb http://http.kali.org/kali sana main non-free contrib\ndeb http://security.kali.org/kali-security sana/updates main contrib non-free\ndeb http://repo.kali.org/kali kali-bleeding-edge main' >>sudo /etc/apt/sources.list")
+	os.system("apt-key adv --keyserver pgp.mit.edu --recv-keys ED444FF07D8D0BF6")
+	os.system("sudo apt-get update -m")
+	os.system("sudo apt-get install macchanger macchanger-gtk")
+	os.system("sudo apt-get  install libpcap-dev libssl-dev wifite aircrack-ng bully reaver pixiewps cowpatty")
+	os.system("sudo git clone https://github.com/vk496/linset.git")	
+	os.system("sudo git clone https://github.com/Dormidera/Passwords.git")	
+	os.system("python airhoney.py")
+	
+elif opcion == 6:
 	os.system("clear")
 	os.system("exit")
