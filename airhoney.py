@@ -13,13 +13,15 @@ print("	    Wireless Audition Toolkit Installer    ")
 print("	             By: Dormidera                 ")                    
 print("	                                    	   ")	
 print("	                                    	   ")
-print("Selecciona una opcion:                  	   ")
+print("Selecciona una opción:                  	   ")
 print("	                                    	   ")
-print("1: Add repositorios de Kali Linux")
-print("2: Instalar herramientas auditorias Wi-Fi")
-print("3: Salir")
+print("1: Añadir repositorios de Kali Linux")
+print("2: Instalar MacChanger")
+print("3: Instalar herramientas auditorias Wi-Fi")
+print("4: Descargar diccionarios")
+print("5: Salir")
 print("	                                    	   ")
-opcion = int(input("Opcion seleccionada: "))
+opcion = int(input("Opción seleccionada: "))
 
 if opcion == 1:
 
@@ -27,12 +29,19 @@ if opcion == 1:
 	os.system("apt-key adv --keyserver pgp.mit.edu --recv-keys ED444FF07D8D0BF6")
 	os.system("sudo apt-get update -m")
 	
-
 elif opcion == 2:
+	print("MacChanger")
+	os.system("sudo apt-get install macchanger macchanger-gtk")
+	
+elif opcion == 3:
 	print("Wifite\nAircrack-ng\nLinset\nBully\nReaver\nPixieWPS\nCowpatty")
 	os.system("sudo apt-get  install libpcap-dev libssl-dev wifite aircrack-ng bully reaver pixiewps cowpatty")
 	os.system("sudo git clone https://github.com/vk496/linset.git")
 
-elif opcion == 3:
+elif opcion == 4:
+	print("Diccionarios")
+	os.system("sudo git clone https://github.com/Dormidera/Passwords.git")	
+	
+elif opcion == 5:
 	os.system("clear")
 	os.system("exit")
