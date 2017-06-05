@@ -38,7 +38,7 @@ elif opcion == 2:
 	
 elif opcion == 3:
 	print("Wifite\nAircrack-ng\nLinset\nBully\nReaver\nPixieWPS\nCowpatty")
-	os.system("sudo apt-get  install libpcap-dev libssl-dev wifite aircrack-ng bully reaver pixiewps cowpatty")
+	os.system("sudo apt-get  install libpcap-dev libssl-dev wifite aircrack-ng bully reaver pixiewps cowpatty pyrit")
 	os.system("sudo git clone https://github.com/vk496/linset.git")
 	os.system("python airhoney.py")
 
