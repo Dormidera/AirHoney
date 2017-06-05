@@ -56,7 +56,7 @@ elif opcion == 5:
 	os.system("sudo apt-get  install libpcap-dev libssl-dev wifite aircrack-ng bully reaver pixiewps cowpatty")
 	os.system("sudo git clone https://github.com/vk496/linset.git")	
 	os.system("sudo git clone https://github.com/Dormidera/Passwords.git")	
-	os.system("python airhoney.py")
+	os.system("exit")
 	
 elif opcion == 6:
 	os.system("clear")
