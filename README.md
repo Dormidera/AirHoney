@@ -3,12 +3,14 @@ Wireless Auditor Toolkit Installer, AirHoney es un script en Python que ayuda a 
 
 # Instalacion:
 Podemos descargarnoslo desde Github o tecleando el siguiente comando:
+
     sudo git clone https://github.com/Dormidera/AirHoney.git
 Una vez descargada, damos permisos de ejecución al script (siempre desde el mismo directorio en el que estamos):
+
     sudo chmod 755 airhoney.py
 Y ejecutamos:
-    sudo python airhoney.py 
 
+    sudo python airhoney.py 
 # Descripción
 ¿Que opciones nos encontramos?
 En AirHoney podemos encontrar las principales herramientas para auditar redes inalámbricas, Macchanger y un paquete de diccionarios variados.
